@@ -1,0 +1,71 @@
+---
+title: "R markdown tutorial"
+author: "Mario Quaranta"
+date: "Week 1"
+output: pdf_document
+---
+
+This is a paragraph
+
+# This is a section
+
+## This is a subsection
+
+### This is a subsubsection
+
+This is an *italic* text, this is a **bold** text.
+
+This is a list:
+
+- Item one
+- Item two
+- ...
+  - Sub item one
+  - ...
+
+This is a numbered list:
+
+1. Item one
+2. Item two
+3. ...
+
+# R code chunk
+
+## Exercise 1
+
+```{r}
+# You can comment here
+x <- seq(from = 0, to = 100, by = 2)
+x
+```
+
+You can also write R code in test (called 'inline code'). This is the content of object x: `r x`.
+
+## Plot
+
+```{r, fig.width = 5, fig.width = 5, fig.align = "center"}
+plot(x, x^2)
+```
+
+## Table
+
+This is a table
+
+-----------------------
+Column 1 Column 2    
+-------- --------------
+1        1
+
+1        1
+
+1        1
+
+1        1
+
+1        1
+-----------------------
+
+
+See a tutorial [here](https://rmarkdown.rstudio.com/lesson-1.html)
+
+See cheat sheet [here](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
